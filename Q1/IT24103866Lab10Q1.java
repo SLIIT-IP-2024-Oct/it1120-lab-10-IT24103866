@@ -14,37 +14,46 @@ public class IT24103866Lab10Q1 {
         System.out.println();
         System.out.println("Mark is Validated");
 
+        char grade;
+        
         if (mark>=75)
         {
-            System.out.println("The Grade for the Entered Mark is: A");
-            return;
+            grade ='A';
+        
            
         }
         else if (mark>=60)
         {
-            System.out.println("The Grade for the Entered Mark is: B");
-            return;
+             grade ='B';
             
         }
         else if (mark>=50)
         {
-            System.out.println("The Grade for the Entered Mark is: C");
-            return;
             
+             grade ='C';
         }
         else if(mark>=40)
         {
-            System.out.println("The Grade for the Entered Mark is: D");
-            return;
+             grade ='D';
         }
             
         else 
         {
-            System.out.println("The Grade for the Entered Mark is: F");
-            return;
+             grade ='F';
             
         }
 
+        assert (mark >= 75 && grade == 'A') || 
+       (mark >= 60 && grade == 'B') || 
+       (mark >= 50 && grade == 'C') || 
+       (mark >= 40 && grade == 'D') || 
+       (grade == 'F') : "Incorrect Grade Assigned";
 
+
+        System.out.println("The Grade for the Entered Mark is; "+grade);
+
+
+    }
+}
     }
 }
