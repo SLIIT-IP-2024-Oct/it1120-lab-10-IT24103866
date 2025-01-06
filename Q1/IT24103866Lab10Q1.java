@@ -50,7 +50,7 @@ public class IT24103866Lab10Q1 {
        (grade == 'F') : "Incorrect Grade Assigned";
 
 
-        System.out.println("The Grade for the Entered Mark is; "+grade);
+        System.out.println("The Grade for the Entered Mark is: "+grade);
 
 
     }
